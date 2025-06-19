@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Exploration - Explore the Universe</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- NASA-inspired Header -->
+    <header class="header">
+        <nav class="navbar container">
+            <a href="#" class="nav-brand">
+                <span class="logo" aria-label="NASA Logo">
+                    <img src="images/8dc9c9038cdfc470a7504e2940bd567f.png" alt="NASA Logo" width="64" height="64">
+                </span>
+            </a>
+            
+            <!-- Desktop Navigation -->
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#missions" class="nav-link">Missions</a></li>
+                <li><a href="#discoveries" class="nav-link">Discoveries</a></li>
+                <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                <li><a href="#news" class="nav-link">News</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+            </ul>
+            
+            <!-- Mobile Hamburger -->
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+        </nav>
+        
+        <!-- Mobile Menu Overlay -->
+        <div class="mobile-menu" id="mobile-menu">
+            <ul class="mobile-nav-list">
+                <li><a href="#home" class="mobile-nav-link">Home</a></li>
+                <li><a href="#missions" class="mobile-nav-link">Missions</a></li>
+                <li><a href="#discoveries" class="mobile-nav-link">Discoveries</a></li>
+                <li><a href="#gallery" class="mobile-nav-link">Gallery</a></li>
+                <li><a href="#news" class="mobile-nav-link">News</a></li>
+                <li><a href="#about" class="mobile-nav-link">About</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- NASA-inspired Hero Section -->
+    <section id="home" class="hero" style="background: url('images/34248161186_9767c8fdce_b.jpg') center/cover no-repeat;">
+        <div class="hero-bg"></div>
+        <div class="container hero-container">
+            <div class="hero-left">
+                <div class="nasa-badge">
+                    <!-- SVG PLACEHOLDER - PUT YOUR GALLERY SVG HERE -->
+                    <!-- Example: <svg>...</svg> -->
+                    <span class="badge-text">NASA EXPLORER</span>
+                </div>
+                <h1 class="hero-title">
+                    Journey to the Stars<br>
+                    <span class="hero-title-accent">Explore the Universe</span>
+                </h1>
+                <p class="hero-desc">
+                    Discover new worlds, witness cosmic wonders, and join the mission to expand humanity’s reach beyond Earth. Your adventure begins here.
+                </p>
+                <div style="margin-top: 2.5rem;">
+                    <a href="#missions" class="btn btn-primary">View Missions</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <aside class="banner-ad">
+        <div class="ad-content">
+            <img src="images/hp_pink.jpg" alt="Space Technology Banner">
+            <div class="ad-text">
+                <h3>Join Our Next Mission</h3>
+                <p>Be part of humanity's greatest adventure</p>
+            </div>
+        </div>
+    </aside>
+
+    <main class="main-content" id="main-content">
+        <section id="missions" class="content-section missions-section">
+            <div class="container">
+                <header class="section-header">
+                    <h2 class="section-title">Current Missions</h2>
+                    <p class="section-subtitle">Exploring new worlds and pushing the boundaries of human knowledge</p>
+                </header>
+                
+                <div class="missions-grid">
+                    <article class="mission-card">
+                        <div class="mission-image">
+                            <img src="images/nasa-45072.jpg" alt="Mars Perseverance Rover">
+                        </div>
+                        <div class="mission-content">
+                            <h3 class="mission-title">Mars Perseverance</h3>
+                            <h4 class="mission-subtitle">Red Planet Exploration</h4>
+                            <p class="mission-description">The Perseverance rover continues its groundbreaking mission on Mars, searching for signs of ancient microbial life and collecting rock samples for future return to Earth.</p>
+                            <a href="#" class="mission-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+                    
+                    <article class="mission-card">
+                        <div class="mission-image">
+                            <img src="images/hubble.jpg" alt="James Webb Space Telescope">
+                        </div>
+                        <div class="mission-content">
+                            <h3 class="mission-title">James Webb Telescope</h3>
+                            <h4 class="mission-subtitle">Deep Space Observatory</h4>
+                            <p class="mission-description">Peering deeper into space than ever before, Webb is revolutionizing our understanding of the early universe and discovering new exoplanets.</p>
+                            <a href="#" class="mission-link">Explore Discoveries <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+                    
+                    <article class="mission-card">
+                        <div class="mission-image">
+                            <img src="images/Hubble_01.jpg" alt="Artemis Program">
+                        </div>
+                        <div class="mission-content">
+                            <h3 class="mission-title">Artemis Program</h3>
+                            <h4 class="mission-subtitle">Return to the Moon</h4>
+                            <p class="mission-description">Preparing for humanity's return to the Moon and establishing a sustainable presence for future Mars exploration missions.</p>
+                            <a href="#" class="mission-link">Mission Details <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="discoveries" class="content-section discoveries-section">
+            <div class="container">
+                <header class="section-header">
+                    <h2 class="section-title">Latest Discoveries</h2>
+                    <p class="section-subtitle">Groundbreaking findings that expand our cosmic perspective</p>
+                </header>
+                
+                <div class="discoveries-content">
+                    <div class="discovery-featured">
+                        <img src="images/nasa-43566.jpg" alt="Exoplanet Discovery">
+                        <div class="discovery-info">
+                            <h3 class="discovery-title">Potentially Habitable Exoplanets Found</h3>
+                            <h4 class="discovery-subtitle">Webb Telescope Makes Historic Discovery</h4>
+                            <p class="discovery-description">Scientists have identified several Earth-like planets in the habitable zone of nearby star systems, bringing us closer to answering the age-old question: Are we alone in the universe?</p>
+                            
+                            <div class="discovery-stats">
+                                <h4>Key Statistics</h4>
+                                <table class="stats-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Planet</th>
+                                            <th>Distance (Light Years)</th>
+                                            <th>Similarity to Earth</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Kepler-442b</td>
+                                            <td>1,200</td>
+                                            <td>87%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>TOI-715b</td>
+                                            <td>137</td>
+                                            <td>92%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>K2-18b</td>
+                                            <td>124</td>
+                                            <td>78%</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <aside class="discovery-sidebar">
+                        <h4>Research Highlights</h4>
+                        <ul class="highlights-list">
+                            <li>Water vapor detected in exoplanet atmospheres</li>
+                            <li>Evidence of seasonal changes on distant worlds</li>
+                            <li>New methods for detecting biosignatures</li>
+                            <li>Advanced spectroscopy techniques developed</li>
+                            <li>International collaboration expanding search efforts</li>
+                        </ul>
+                        
+                        <div class="research-team">
+                            <h4>Lead Research Team</h4>
+                            <p>Dr. Sarah Chen, Exoplanet Research Division</p>
+                            <p>Prof. Michael Rodriguez, Astrobiology Institute</p>
+                            <p>Dr. Aisha Patel, Webb Telescope Operations</p>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery" class="content-section gallery-section">
+            <div class="container">
+                <header class="section-header">
+                    <h2 class="section-title">Cosmic Gallery</h2>
+                    <p class="section-subtitle">Breathtaking images from across the universe</p>
+                </header>
+                
+                <div class="gallery-grid">
+                    <div class="gallery-item" data-category="planets">
+                        <img src="images/potw1728a_0-2.jpg" alt="Mars Surface">
+                        <div class="gallery-overlay">
+                            <h4>Mars Surface</h4>
+                            <p>Captured by Perseverance Rover</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="nebulae">
+                        <img src="images/potw1733a-1.jpg" alt="Orion Nebula">
+                        <div class="gallery-overlay">
+                            <h4>Orion Nebula</h4>
+                            <p>Hubble Space Telescope</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="galaxies">
+                        <img src="images/potw1736a.jpg" alt="Distant Galaxy">
+                        <div class="gallery-overlay">
+                            <h4>Distant Galaxy</h4>
+                            <p>Webb Deep Field Image</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="planets">
+                        <img src="images/potw1737a.jpg" alt="Earth from Space">
+                        <div class="gallery-overlay">
+                            <h4>Earth from ISS</h4>
+                            <p>International Space Station</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="nebulae">
+                        <img src="images/potw1738a.jpg" alt="Eagle Nebula">
+                        <div class="gallery-overlay">
+                            <h4>Eagle Nebula</h4>
+                            <p>Pillars of Creation</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="galaxies">
+                        <img src="images/nasa-89125.jpg" alt="Andromeda Galaxy">
+                        <div class="gallery-overlay">
+                            <h4>Andromeda Galaxy</h4>
+                            <p>Our Nearest Galactic Neighbor</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Gallery Stats -->
+                <div class="gallery-stats">
+                    <div class="gallery-stat">
+                        <span class="gallery-stat-number">2,847</span>
+                        <span class="gallery-stat-label">Total Images</span>
+                    </div>
+                    <div class="gallery-stat">
+                        <span class="gallery-stat-number">156</span>
+                        <span class="gallery-stat-label">Telescopes</span>
+                    </div>
+                    <div class="gallery-stat">
+                        <span class="gallery-stat-number">89</span>
+                        <span class="gallery-stat-label">Missions</span>
+                    </div>
+                    <div class="gallery-stat">
+                        <span class="gallery-stat-number">24/7</span>
+                        <span class="gallery-stat-label">Live Updates</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Latest News -->
+        <section id="news" class="content-section news-section">
+            <div class="container">
+                <header class="section-header">
+                    <h2 class="section-title">Space News</h2>
+                    <p class="section-subtitle">Stay updated with the latest developments in space exploration</p>
+                </header>
+                
+                <div class="news-container">
+                    <!-- Featured News with Video -->
+                    <article class="news-featured">
+                        <div class="news-media">
+                            <video class="news-video" controls poster="images/nasa-43564 copy.jpg">
+                                <source src="images/856857-uhd_4096_2160_30fps.mp4" type="video/mp4">
+                                <img src="images/nasa-43564.jpg" alt="Artemis Mission Launch">
+                            </video>
+                            <div class="media-overlay">
+                                <span class="media-type">🎥 Video</span>
+                            </div>
+                        </div>
+                        <div class="news-info">
+                            <div class="news-meta">
+                                <span class="news-date">December 19, 2024</span>
+                                <span class="news-category">Mission Update</span>
+                            </div>
+                            <h3 class="news-headline">Artemis III Mission: Historic Return to the Moon</h3>
+                            <p class="news-summary">Space agency announces breakthrough progress in Artemis III mission planning, featuring revolutionary spacesuit designs and advanced lunar habitat prototypes that will enable sustainable human presence on the Moon.</p>
+                            <div class="news-actions">
+                                <button class="btn btn-primary">Watch Full Coverage</button>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <!-- News Grid -->
+                    <div class="news-grid">
+                        <article class="news-card">
+                            <div class="news-thumbnail">
+                                <img src="images/nasa-43566.jpg" alt="Webb Telescope">
+                                <div class="thumbnail-overlay">
+                                    <span class="read-time">3 min read</span>
+                                </div>
+                            </div>
+                            <div class="news-details">
+                                <span class="news-date">December 18, 2024</span>
+                                <h4 class="news-title">Webb Telescope Discovers Water Vapor</h4>
+                                <p class="news-excerpt">Revolutionary atmospheric analysis reveals water vapor signatures on potentially habitable exoplanet K2-18b.</p>
+                                <button class="btn btn-outline news-btn">Read More</button>
+                            </div>
+                        </article>
+                        
+                        <article class="news-card">
+                            <div class="news-thumbnail">
+                                <img src="images/nasa-45067.jpg" alt="Solar Activity">
+                                <div class="thumbnail-overlay">
+                                    <span class="read-time">2 min read</span>
+                                </div>
+                            </div>
+                            <div class="news-details">
+                                <span class="news-date">December 17, 2024</span>
+                                <h4 class="news-title">Spectacular Aurora Alert</h4>
+                                <p class="news-excerpt">Increased solar activity expected to create breathtaking aurora displays visible across northern regions.</p>
+                                <button class="btn btn-outline news-btn">Read More</button>
+                            </div>
+                        </article>
+                        
+                        <article class="news-card">
+                            <div class="news-thumbnail">
+                                <img src="images/nasa-45072.jpg" alt="Mars Mission">
+                                <div class="thumbnail-overlay">
+                                    <span class="read-time">4 min read</span>
+                                </div>
+                            </div>
+                            <div class="news-details">
+                                <span class="news-date">December 16, 2024</span>
+                                <h4 class="news-title">Mars Sample Return Progress</h4>
+                                <p class="news-excerpt">Perseverance rover successfully collects and seals critical rock samples for future Earth return mission.</p>
+                                <button class="btn btn-outline news-btn">Read More</button>
+                            </div>
+                        </article>
+                        
+                        <article class="news-card">
+                            <div class="news-thumbnail">
+                                <img src="images/nasa-45075.jpg" alt="Space Station">
+                                <div class="thumbnail-overlay">
+                                    <span class="read-time">5 min read</span>
+                                </div>
+                            </div>
+                            <div class="news-details">
+                                <span class="news-date">December 15, 2024</span>
+                                <h4 class="news-title">ISS Research Breakthrough</h4>
+                                <p class="news-excerpt">Microgravity experiments yield promising results for advanced materials manufacturing in space.</p>
+                                <button class="btn btn-outline news-btn">Read More</button>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5: About -->
+        <section id="about" class="content-section about-section">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-text">
+                        <h2 class="section-title">About Us</h2>
+                        <h3 class="about-subtitle">Leading Humanity's Journey to the Stars</h3>
+                        <p class="about-description">Since our founding, we have been at the forefront of space exploration, scientific discovery, and technological innovation. From historic moon landings to cutting-edge Mars rovers, we continue to push the boundaries of human knowledge and capability.</p>
+                        
+                        <p class="about-description">Our mission extends beyond exploration—we're committed to understanding Earth's climate, developing new technologies that benefit life on our planet, and inspiring the next generation of scientists, engineers, and explorers.</p>
+                        
+                        <div class="about-stats">
+                            <div class="stat-item">
+                                <span class="stat-number">65+</span>
+                                <span class="stat-label">Years of Exploration</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">500+</span>
+                                <span class="stat-label">Successful Missions</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">18,000+</span>
+                                <span class="stat-label">Dedicated Employees</span>
+                            </div>
+                        </div>
+                        
+                        <button class="btn btn-primary">Join Our Mission</button>
+                    </div>
+                    
+                    <div class="about-image">
+                        <img src="images/hubble.jpg" alt="Mission Control">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer with NASA Logo -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section footer-brand">
+                    <div class="footer-logo">
+                        <!-- Replaced SVG with image -->
+                        <img src="images/[CITYPNG.COM]HD Nasa Logo Transparent Background - 3000x3000.png" alt="NASA Logo" width="90" height="90">
+                    </div>
+                    <p class="footer-description">Exploring the universe and advancing our understanding of space, science, and technology for the benefit of all humanity.</p>
+                    
+                    <div class="social-media">
+                        <h4>Follow Us</h4>
+                        <div class="social-links">
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">Space Resources</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Space.com</a></li>
+                        <li><a href="#">European Space Agency</a></li>
+                        <li><a href="#">SpaceX</a></li>
+                        <li><a href="#">Blue Origin</a></li>
+                        <li><a href="#">International Space Station</a></li>
+                        <li><a href="#">Planetary Society</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#missions">Current Missions</a></li>
+                        <li><a href="#discoveries">Latest Discoveries</a></li>
+                        <li><a href="#gallery">Image Gallery</a></li>
+                        <li><a href="#news">Space News</a></li>
+                        <li><a href="#about">About Us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">Legal</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                        <li><a href="#">Accessibility</a></li>
+                        <li><a href="#">FOIA</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© 2024 NASA Explorer. All rights reserved.</p>
+                <p>This website is for educational and demonstration purposes.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Only one script tag for hamburger.js at the end of your body -->
+    <script src="hamburger.js"></script>
+</body>
+</html>
